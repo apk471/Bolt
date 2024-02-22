@@ -1,0 +1,106 @@
+#header a{
+    max-height: 100px;
+    overflow: hidden;
+}
+#header a img{
+    /* height: 100%;
+    width: 100%;    */
+    height: 100px;
+    width: 130px;
+    overflow:auto;
+    
+
+    /* border-radius: 100px; */
+}
+#header{
+    margin: 20px 20px 20px 20px;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    /* background-color: #E3E6F3; */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+
+}
+/* box-shadow : x y radius */
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #327052;
+
+}
+
+/* ::after and :: before are psudo classes */
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    
+    width: 30%;
+    height: 3px;
+    position: absolute;
+    background-color: #327052;
+    bottom: -4px;
+    left:20px;
+    
+}
+#navbar li a button{
+    background-color:#327052;
+    border-radius: 10px;
+    width: 150px;
+    font-size: 15px;
+    color: white;
+    border:0
+
+}
+#body{
+    display: flex;
+    width: 100%;
+    border-width: 10px;
+    justify-content: space-between;
+}
+#left{
+    width: 30%;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+#left h1{
+    font-size:50px;
+}
+#left button{
+    background-color: #327052;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+}
+#body img{
+    height: 350px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
